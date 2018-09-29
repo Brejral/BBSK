@@ -6,7 +6,7 @@ using SQLite;
 
 namespace BBSK.Helpers
 {
-    static class DatabaseHelper
+    public static class DatabaseHelper
     {
       private static string dbPath = "BBSK/bbsk.sqlite";
 
