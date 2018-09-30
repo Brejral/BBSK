@@ -4,9 +4,9 @@ using System.Text;
 using BBSK.Models;
 using SQLite;
 
-namespace BBSK.Helpers
+namespace BBSK
 {
-    public static class DatabaseHelper
+    public static class DataHelper
     {
       private static string dbPath = "BBSK/bbsk.sqlite";
 

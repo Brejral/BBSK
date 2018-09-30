@@ -1,5 +1,4 @@
-﻿using BBSK.Helpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -14,7 +13,7 @@ namespace BBSK.Models
 
       public Game()
       {
-         DatabaseHelper.db.CreateTable<Game>();
+         DataHelper.db.CreateTable<Game>();
       }
 
       public DateTime Date { get; set; }
@@ -38,7 +37,7 @@ namespace BBSK.Models
          {
             if (homeTeam == null)
             {
-               homeTeam = DatabaseHelper.TeamList.Find(t => t.ID == HomeTeamId);
+               homeTeam = DataHelper.TeamList.Find(t => t.ID == HomeTeamId);
             }
             return homeTeam;
          }
@@ -51,7 +50,7 @@ namespace BBSK.Models
          {
             if (awayTeam == null)
             {
-               awayTeam = DatabaseHelper.TeamList.Find(t => t.ID == AwayTeamId);
+               awayTeam = DataHelper.TeamList.Find(t => t.ID == AwayTeamId);
             }
             return awayTeam;
          }
@@ -59,7 +58,7 @@ namespace BBSK.Models
 
       public static List<Game> Load()
       {
-         return DatabaseHelper.db.Table<Game>().ToList();
+         return DataHelper.db.Table<Game>().ToList();
       } 
    }
 }

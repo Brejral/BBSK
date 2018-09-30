@@ -1,5 +1,4 @@
-﻿using BBSK.Helpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -24,12 +23,12 @@ namespace BBSK.Models
       {
          if (isNew)
          {
-            DatabaseHelper.db.Insert(this);
+            DataHelper.db.Insert(this);
             isNew = false;
          }
          else
          {
-            DatabaseHelper.db.Update(this);
+            DataHelper.db.Update(this);
          }
       }
     }

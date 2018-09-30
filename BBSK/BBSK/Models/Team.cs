@@ -1,5 +1,4 @@
-﻿using BBSK.Helpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -22,7 +21,7 @@ namespace BBSK.Models
 
       public static List<Team> Load()
       {
-         return DatabaseHelper.db.Table<Team>().ToList();
+         return DataHelper.db.Table<Team>().ToList();
       }
     }
 }

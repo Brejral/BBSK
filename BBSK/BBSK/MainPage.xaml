@@ -4,7 +4,8 @@
              xmlns:local="clr-namespace:BBSK"
              x:Class="BBSK.MainPage">
 
-   <local:TeamsPage Title="Teams"/>
-   <local:GamesPage Title="Games" />
+   <!--<local:TeamsPage Title="Teams"/>
+   <local:GamesPage Title="Games" />-->
+   <local:GamePage Title="Game" />
 
 </TabbedPage>
